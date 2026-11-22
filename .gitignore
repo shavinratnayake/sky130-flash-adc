@@ -1,0 +1,16 @@
+# NGspice temporary files
+*.raw
+*.log
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Editor backup files
+*~
+*.swp
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
