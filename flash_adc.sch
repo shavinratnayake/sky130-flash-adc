@@ -118,13 +118,6 @@ C {lab_pin.sym} 100 60 0 1 {name=p16 sig_type=std_logic lab=VREF14}
 C {lab_pin.sym} 100 0 0 1 {name=p17 sig_type=std_logic lab=VREF15}
 C {code_shown.sym} -750 -40 0 0 {name=s1 only_toplevel=false value=".control
 tran 10p 25n
-meas tran vin_rise WHEN v(vin)=0.9 RISE=1
-
-meas tran d0_last WHEN v(d0)=0.9 FALL=1
-meas tran d1_last WHEN v(d0)=0.9 FALL=1
-meas tran d2_last WHEN v(d0)=0.9 FALL=1
-meas tran d3_last WHEN v(d0)=0.9 FALL=1
-
 plot v(vin) v(d3) v(d2) v(d1) v(d0)
 .endc"}
 C {vsource.sym} -710 -140 0 0 {name=V1 value=1.8 savecurrent=false}
@@ -212,22 +205,6 @@ C {lab_pin.sym} -630 -170 1 0 {name=p78 sig_type=std_logic lab=VIN}
 C {code_shown.sym} -830 220 0 0 {name=s2 only_toplevel=false value=".lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 "}
-C {comparator.sym} 430 900 0 0 {name=x1}
-C {comparator.sym} 430 830 0 0 {name=x2}
-C {comparator.sym} 430 760 0 0 {name=x3}
-C {comparator.sym} 430 690 0 0 {name=x4}
-C {comparator.sym} 430 620 0 0 {name=x5}
-C {comparator.sym} 430 550 0 0 {name=x6}
-C {comparator.sym} 430 480 0 0 {name=x7}
-C {comparator.sym} 430 410 0 0 {name=x8}
-C {comparator.sym} 430 340 0 0 {name=x9}
-C {comparator.sym} 430 270 0 0 {name=x10}
-C {comparator.sym} 430 200 0 0 {name=x11}
-C {comparator.sym} 430 130 0 0 {name=x12}
-C {comparator.sym} 430 60 0 0 {name=x13}
-C {comparator.sym} 430 -10 0 0 {name=x14}
-C {comparator.sym} 430 -80 0 0 {name=x15}
-C {thermometer_encoder.sym} 970 30 0 0 {name=x16}
 C {lab_pin.sym} 820 -100 0 0 {name=p79 sig_type=std_logic lab=C1}
 C {lab_pin.sym} 820 -80 0 0 {name=p80 sig_type=std_logic lab=C2}
 C {lab_pin.sym} 820 -60 0 0 {name=p81 sig_type=std_logic lab=C3}
@@ -248,3 +225,19 @@ C {lab_pin.sym} 1120 -80 0 1 {name=p95 sig_type=std_logic lab=D1}
 C {lab_pin.sym} 1120 -100 0 1 {name=p96 sig_type=std_logic lab=D2}
 C {lab_pin.sym} 1120 -120 0 1 {name=p97 sig_type=std_logic lab=D3}
 C {lab_pin.sym} 820 -120 2 1 {name=p98 sig_type=std_logic lab=VDD}
+C {/foss/designs/flash-adc/comparator.sym} 430 -80 0 0 {name=x17}
+C {/foss/designs/flash-adc/thermometer_encoder.sym} 970 30 0 0 {name=x18}
+C {/foss/designs/flash-adc/comparator.sym} 430 -10 0 0 {name=x1}
+C {/foss/designs/flash-adc/comparator.sym} 430 60 0 0 {name=x2}
+C {/foss/designs/flash-adc/comparator.sym} 430 130 0 0 {name=x3}
+C {/foss/designs/flash-adc/comparator.sym} 430 200 0 0 {name=x4}
+C {/foss/designs/flash-adc/comparator.sym} 430 270 0 0 {name=x5}
+C {/foss/designs/flash-adc/comparator.sym} 430 340 0 0 {name=x6}
+C {/foss/designs/flash-adc/comparator.sym} 430 410 0 0 {name=x7}
+C {/foss/designs/flash-adc/comparator.sym} 430 480 0 0 {name=x8}
+C {/foss/designs/flash-adc/comparator.sym} 430 550 0 0 {name=x9}
+C {/foss/designs/flash-adc/comparator.sym} 430 620 0 0 {name=x10}
+C {/foss/designs/flash-adc/comparator.sym} 430 690 0 0 {name=x11}
+C {/foss/designs/flash-adc/comparator.sym} 430 760 0 0 {name=x12}
+C {/foss/designs/flash-adc/comparator.sym} 430 830 0 0 {name=x13}
+C {/foss/designs/flash-adc/comparator.sym} 430 900 0 0 {name=x14}
