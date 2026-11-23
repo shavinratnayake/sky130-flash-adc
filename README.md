@@ -14,6 +14,26 @@ The design integrates a resistor reference ladder, 15 transistor-level comparato
 - **Comparators:** 15
 - **Encoder:** 15-bit thermometer code to 4-bit binary
 
+## Design Schematic
+
+The complete 4-bit flash ADC integrates a resistor reference ladder, 15 CMOS comparators, and a thermometer-to-binary encoder.
+
+![4-Bit Flash ADC Schematic](images/flash_adc_schematic.png)
+
+## Simulation Waveforms
+
+### DC Transfer Characteristic
+
+The ADC produces 16 monotonic output codes across the nominal 0–1.8 V input range.
+
+![ADC DC Transfer Characteristic](images/adc_transfer.png)
+
+### Transient Response
+
+Transient simulation showing the analog input and four digital output signals. Temporary output glitches are visible during switching.
+
+![ADC Transient Response](images/transient_response.png)
+
 ## Simulation Results
 
 | Parameter | Result |
